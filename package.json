@@ -1,0 +1,32 @@
+{
+  "name": "test-repo-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "dotenv -e .env -- turbo run build",
+    "preview": "dotenv -e .env -- turbo run preview",
+    "dev": "dotenv -e .env.development -- turbo run dev",
+    "graphql:codegen": "dotenv -e .env.development -- turbo graphql:codegen",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@test-repo/eslint-config": "workspace:*",
+    "@test-repo/unocss-config": "workspace:*",
+    "@types/node": "^18.14.6",
+    "prettier": "latest",
+    "taze": "^0.9.0",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "pnpm@7.29.0",
+  "dependencies": {
+    "dotenv-cli": "^7.0.0"
+  }
+}

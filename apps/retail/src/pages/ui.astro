@@ -1,0 +1,25 @@
+---
+import DefaultLayout from '../layouts/default.astro'
+---
+
+<DefaultLayout title="UI">
+
+  <div>
+    <div />
+  </div>
+
+  <h1>Astro</h1>
+  <div un-container="xl:~" max-w="screen-xl" un-border="1 green md:red">
+    <button btn>Оставить отзыв</button>
+    <button btn-green>Оставить отзыв</button>
+    <button btn="~ red">Оставить отзыв</button>
+  </div>
+  <div class="retail">
+    <div un-text="primary">123</div>
+  </div>
+  <div un-theme="retail">
+    <div un-text="secondary">123</div>
+  </div>
+  <div un-text="red">123</div>
+
+</DefaultLayout>

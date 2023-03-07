@@ -1,0 +1,51 @@
+{
+  "folders": [
+    {
+      "name": "🛍️ retail",
+      "path": "../apps/retail"
+    },
+    {
+      "name": "🏪 wholesale",
+      "path": "../apps/wholesale"
+    },
+    {
+      "name": "🏠 .",
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "node_modules/": true,
+      "dist/": true,
+    },
+    "cSpell.words": [
+      "astro",
+      "astrojs",
+      "test-repo"
+    ],
+    "editor.tabSize": 2,
+    "prettier.enable": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "astro", // Enable .astro
+      "typescript", // Enable .ts
+      "typescriptreact" // Enable .tsx
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "antfu.unocss",
+      "astro-build.astro-vscode",
+      "csstools.postcss",
+      "dbaeumer.vscode-eslint",
+      "streetsidesoftware.code-spell-checker"
+    ]
+  }
+}

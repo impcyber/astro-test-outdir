@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props
+---
+
+<html lang="ru" un-scroll="smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title set:text={title} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#f4b619">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="test-repo">
+    <meta name="application-name" content="test-repo">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f4b619">
+    <script src="/src/scripts/bootstrap.ts"></script>
+    <link rel="stylesheet" href="/src/styles/fonts.css">
+  </head>
+
+  <body theme-retail font-montserrat subpixel-antialiased>
+    <main>
+      <slot />
+
+      <div square-10px b-1 data-controller="test" />
+      <div w="10" h="10" border="1 rounded blue-200" />
+    </main>
+  </body>
+</html>
